@@ -1,0 +1,14 @@
+@media (max-width: 400px) {
+    #game_space {
+        border: 2px, black;
+    }
+}
+@media (min-width: 401px) {
+    #game_space {
+        border: 2px, black;
+    }
+
+    .container {
+        border: 1px;
+    }
+}
