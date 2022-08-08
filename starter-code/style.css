@@ -5,6 +5,7 @@ body {
 @media (max-width: 400px) {
     #game_space {
         border: 2px, black;
+        background-color: #1f3641;
     }
     .container {
         height: 5rem;
