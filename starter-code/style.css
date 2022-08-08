@@ -5,10 +5,13 @@
 }
 @media (min-width: 401px) {
     #game_space {
-        border: 2px, black;
+
+        border-width: 2px;
     }
 
     .container {
         border: 1px;
     }
+    
+
 }
