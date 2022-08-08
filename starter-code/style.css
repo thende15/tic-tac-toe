@@ -12,6 +12,10 @@ body {
         width: 5rem;
         border: 1px;
     }
+    .row {
+        height: 5rem;
+        width: 5rem;
+    }
 }
 
 @media (min-width: 401px) {
