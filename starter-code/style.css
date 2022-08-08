@@ -6,7 +6,13 @@ body {
     #game_space {
         border: 2px, black;
     }
+    .container {
+        height: 5rem;
+        width: 5rem;
+        border: 1px;
+    }
 }
+
 @media (min-width: 401px) {
     #game_space {
         background-color: red;
