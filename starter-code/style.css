@@ -5,7 +5,7 @@
 }
 @media (min-width: 401px) {
     #game_space {
-
+        background-color: red;
         border-width: 2px;
     }
 
