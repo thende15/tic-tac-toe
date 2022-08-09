@@ -7,3 +7,6 @@ function setPlayerOne() {
     let playerOne = document.getElementsByName("player_select").values()
     console.log(playerOne)
 }
+
+let board = document.getElementsByClassName("game_space")
+board.click(console.log("clicked!"))
