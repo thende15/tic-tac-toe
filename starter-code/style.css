@@ -22,12 +22,13 @@ body {
     }
     
     .block {
-        height: 10vh;
-        width: 10vw;
+        
+        width: 13vw;
         border: 1px, red;
         background-color: whitesmoke;
-        justify-content: flex-start;
-        
+        justify-items: center;
+        align-items: center;
+        aspect-ratio: 1;
     }
 }
 
