@@ -3,10 +3,24 @@ body {
 }
 
 @media (max-width: 400px) {
+    #start_here {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #player_select {
+        background-color: pink;
+    }
     #center {
         display: flex;
         justify-content: center;
         align-content: center;
+    }
+    #begin {
+        display: flex;
+        justify-content: center;
     }
     .game_space {
         border: 2px, black;
