@@ -6,23 +6,23 @@ body {
     .game_space {
         border: 2px, black;
         background-color: #1f3641;
-        width: 100vw;
+        width: 80vw;
         height: 40vh;
         display: grid;
-        grid-template-rows: 33%, 33%, 33%; 
-        /*grid-template-columns: 33%, 33%, 33%;*/
+        grid-template-rows: 33% 33% 33%; 
+        grid-template-columns: 33% 33% 33%;
+        justify-content: center;
+        
         
     }
     
     .block {
-        height: 1rem;
-        width: 1rem;
+        height: 10vh;
+        width: 10vw;
         border: 1px, red;
         background-color: whitesmoke;
-        grid-column-start: 1;
-        grid-column-end: span 3;
-        grid-row-start: 1;
-        grid-row-end: 4;
+        justify-content: flex-start;
+        
     }
 }
 
