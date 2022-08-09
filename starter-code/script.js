@@ -5,7 +5,14 @@ let vsPlayer = document.getElementById("new_v_play")
 vsPlayer.addEventListener('click', setPlayerOne)
 function setPlayerOne() {
     let playerOne = document.getElementsByName("player_select");
-    console.log(playerOne)
+    for (i = 0; i < playerOne.length; i++) {
+        if(playerOne[i].checked) {
+            console.log(playerOne)
+            // document.getElementById("result").innerHTML
+            //    = "Player One is: " + playerOne[i].value
+        }
+    }
+    
 }
 
 let board = document.querySelector(".game_space");
