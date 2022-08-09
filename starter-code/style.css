@@ -55,13 +55,54 @@ body {
 }
 
 @media (min-width: 401px) {
-    #game_space {
-        background-color: red;
-        border-width: 2px;
+    #start_here {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
-
-    .container {
-        border: 1px;
+    #player_select {
+        background-color: pink;
+    }
+    #center {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    #begin {
+        display: flex;
+        justify-content: center;
+    }
+    .game_space {
+        border: 2px, black;
+        background-color: #1f3641;
+        width: 1000vw;
+        height: 60vh;
+        display: grid;
+        grid-template-rows: 33% 33% 33%; 
+        grid-template-columns: 33% 33% 33%;
+        justify-content: center;
+        
+        
+    }
+    
+    .block {
+        border-radius: 1rem;
+        width: 25vw;
+        
+        border: 1px, red;
+        background-color: whitesmoke;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 1;
+    }
+    .ex {
+        display: none;
+    
+    }
+    .oh {
+        display: none;
     }
     
 
