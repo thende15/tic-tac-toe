@@ -11,8 +11,8 @@ body {
     .game_space {
         border: 2px, black;
         background-color: #1f3641;
-        width: 80vw;
-        height: 40vh;
+        width: 1000vw;
+        height: 60vh;
         display: grid;
         grid-template-rows: 33% 33% 33%; 
         grid-template-columns: 33% 33% 33%;
@@ -22,11 +22,12 @@ body {
     }
     
     .block {
+        border-radius: 1rem;
+        width: 25vw;
         
-        width: 13vw;
         border: 1px, red;
         background-color: whitesmoke;
-        justify-items: center;
+        justify-content: center;
         align-items: center;
         aspect-ratio: 1;
     }
