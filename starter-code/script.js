@@ -8,19 +8,36 @@ function setPlayerOne() {
     for (i = 0; i < playerOne.length; i++) {
         if(playerOne[i].checked) {
             console.log(playerOne)
+            localStorage.setItem('Player One', playerOne[i].value);
             // document.getElementById("result").innerHTML
             //    = "Player One is: " + playerOne[i].value
-        }
+        } 
     }
     
 }
 
-let board = document.querySelector(".game_space");
-board.addEventListener('click', setPiece);
-function setPiece(e) {
-    if (e.target.className === "block") {
-        console.log("piece set!")
+// let board = document.querySelector(".game_space");
+// board.addEventListener('click', setPiece);
+// function setPiece(e) {
+//     if (e.target.className === "block") {
+//         console.log("piece set!")
+//     }
+// }
+let cells = document.querySelectorAll(".game_space div"), turns = 0;
+for (let i = 0; i< cells.length; i++) {
+    cells[i].onclick = function() {
+        if (this.innerHTML !== "X" && this.innerHTML !== "O") {
+            if (turns % 2 === 0) {
+                this.innerHTML = "X";
+                turns += 1;
+            } else {
+                if (turns % 2 === 1) {
+                    this.innerHTML = "O";
+                    turns += 1;
+            }
+        }
     }
+}
 }
 
 //Winning Combos 
