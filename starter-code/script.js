@@ -22,3 +22,23 @@ function setPiece(e) {
         console.log("piece set!")
     }
 }
+
+//Winning Combos 
+// 1, 2, 3
+// 4, 5, 6
+// 7, 8, 9
+// 1, 4, 7
+// 2, 5, 8
+// 3, 6, 9
+// 1, 5, 9
+// 7, 5, 3
+
+let cellOne = document.getElementById('one')
+let cellTwo = document.getElementById('two')
+let cellThree = document.getElementById('three')
+let cellFour = document.getElementById('four')
+let cellFive = document.getElementById('five')
+let cellSix = document.getElementById('six')
+let cellSeven = document.getElementById('seven')
+let cellEight = document.getElementById('eight')
+let cellNine = document.getElementById('nine')
