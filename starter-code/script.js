@@ -32,23 +32,23 @@ function setPiece(e) {
 // 3, 6, 9
 // 1, 5, 9
 // 7, 5, 3
-function winCon() {
-    let cellOne = document.getElementById('one')
-    let cellTwo = document.getElementById('two')
-    let cellThree = document.getElementById('three')
-    let cellFour = document.getElementById('four')
-    let cellFive = document.getElementById('five')
-    let cellSix = document.getElementById('six')
-    let cellSeven = document.getElementById('seven')
-    let cellEight = document.getElementById('eight')
-    let cellNine = document.getElementById('nine')
-    
-    if(cellOne === cellTwo === cellThree)
-    if(cellFour === cellFive === cellSix)
-    if(cellSeven === cellEight === cellNine)
-    if(cellOne === cellFive === cellNine)
-    if(cellSeven === cellFive === cellThree)
-    if(cellOne === cellFour === cellSeven)
-    if(cellTwo === cellFive === cellEight)
-    if(cellThree === cellSix === cellNine)
-}
+// function winCon() {
+//     let cellOne = document.getElementById('one')
+//     let cellTwo = document.getElementById('two')
+//     let cellThree = document.getElementById('three')
+//     let cellFour = document.getElementById('four')
+//     let cellFive = document.getElementById('five')
+//     let cellSix = document.getElementById('six')
+//     let cellSeven = document.getElementById('seven')
+//     let cellEight = document.getElementById('eight')
+//     let cellNine = document.getElementById('nine')
+
+//     if(cellOne === cellTwo === cellThree)
+//     if(cellFour === cellFive === cellSix)
+//     if(cellSeven === cellEight === cellNine)
+//     if(cellOne === cellFive === cellNine)
+//     if(cellSeven === cellFive === cellThree)
+//     if(cellOne === cellFour === cellSeven)
+//     if(cellTwo === cellFive === cellEight)
+//     if(cellThree === cellSix === cellNine)
+// }
