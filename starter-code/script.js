@@ -37,16 +37,17 @@ function setPlayerOne() {
 // svg.appendChild(newElement);
 
 let cells = document.querySelectorAll(".game_space div"), turns = 0;
-for (let i = 0; i< cells.length; i++) {
+for (let i = 0; i < cells.length; i++) {
     cells[i].onclick = function() {
         if (this.innerHTML !== "X" && this.innerHTML !== "O") {
             if (turns % 2 === 0) {
                 this.innerHTML = "X";
-                //turn.prepend()
+                turn.innerHTML = "O's turn"
                 turns += 1;
             } else {
                 if (turns % 2 === 1) {
                     this.innerHTML = "O";
+                    turn.innerHTML = "X's turn"
                     turns += 1;
             }
         }
