@@ -81,3 +81,17 @@ for (let i = 0; i< cells.length; i++) {
 // newElement.style.fill = "#979797"
 // newElement.style.fillRule = "evenodd"
 // svg.appendChild(newElement);
+
+document.getElementById('replay').addEventListener('click', replay);
+
+    function replay() {
+
+      for (var i = 0; i < boxes.length; i++) {
+        boxes[i].classList.remove("win");
+        boxes[i].innerHTML = "";
+        turn.innerHTML = "Play";
+        turn.style.fontSize = "25px";
+
+      }
+
+    }
