@@ -82,6 +82,8 @@ for (let i = 0; i< cells.length; i++) {
 // newElement.style.fillRule = "evenodd"
 // svg.appendChild(newElement);
 
+
+//Edit this (Replay)
 document.getElementById('replay').addEventListener('click', replay);
 
     function replay() {
