@@ -41,14 +41,14 @@ function winCon() {
     let cellEight = document.getElementById('eight')
     let cellNine = document.getElementById('nine')
 
-    if(cellOne !== "" && cellOne === cellTwo === cellThree) {console.log("winner!")} else
-    if(cellFour === cellFive === cellSix) {winner(cellFour, cellFive, cellSix)} else
-    if(cellSeven === cellEight === cellNine) {winner(cellSeven, cellEight, cellNine)} else
-    if(cellOne === cellFive === cellNine) {winner(cellOne, cellFive, cellNine)} else
-    if(cellSeven === cellFive === cellThree) {winner(cellSeven, cellFive, cellThree)} else
-    if(cellOne === cellFour === cellSeven) {winner(cellOne, cellFour, cellSeven)} else
-    if(cellTwo === cellFive === cellEight) {winner(cellTwo, cellFive, cellEight)} else
-    if(cellThree === cellSix === cellNine) winner(cellNine, cellSix, cellThree) 
+    if(cellOne !== "" && cellOne.innerHTML === cellTwo.innerHTML && cellOne.innerHTML === cellThree.innerHTML) {console.log("winner!")} else
+    if(cellFour !== "" && cellFour.innerHTML === cellFive.innerHTML && cellFour.innerHTML === cellSix.innerHTML) {console.log("winner!")} else
+    if(cellSeven !== "" && cellSeven.innerHTML === cellEight.innerHTML && cellSeven.innerHTML === cellNine.innerHTML) {console.log("winner!")} else
+    if(cellOne !== "" && cellOne.innerHTML === cellFive.innerHTML && cellOne.innerHTML === cellNine.innerHTML) {console.log("winner!")} else
+    if(cellSeven !== "" && cellSeven.innerHTML === cellFive.innerHTML && cellSeven.innerHTML === cellThree.innerHTML) {console.log("winner!")} else
+    if(cellOne !== "" && cellOne.innerHTML === cellFour.innerHTML && cellOne.innerHTML === cellSeven.innerHTML) {console.log("winner!")} else
+    if(cellTwo !== "" && cellTwo.innerHTML === cellFive.innerHTML && cellTwo.innerHTML === cellEight.innerHTML) {console.log("winner!")} else
+    if(cellThree !== "" && cellThree.innerHTML === cellSix.innerHTML && cellThree.innerHTML === cellNine.innerHTML)  {console.log("winner!")} 
 }
 
 
