@@ -55,15 +55,15 @@ function winCon() {
 let cells = document.querySelectorAll(".game_space div"), turns = 0;
 for (let i = 0; i < cells.length; i++) {
     cells[i].onclick = function() {
-        if (this.innerHTML !== "&#215;" && this.innerHTML !== "&#8858;") {
-            if (turns % 2 === 0 && this.innerHTML !== "&#8858;") {
-                this.innerHTML = "&#215;";
-                turn.innerHTML = "&#8858;'s turn";
+        if (this.innerHTML !== "X" && this.innerHTML !== "O") {
+            if (turns % 2 === 0 && this.innerHTML !== "O") {
+                this.innerHTML = "X";
+                turn.innerHTML = "O's turn";
                 console.log(winCon());
                 turns += 1;
             } else {
-                this.innerHTML = "&#8858;";
-                turn.innerHTML = "&#215;'s turn";
+                this.innerHTML = "O";
+                turn.innerHTML = "X's turn";
                 winCon();
                 turns += 1;
             
@@ -74,7 +74,7 @@ for (let i = 0; i < cells.length; i++) {
 console.log(winCon())
 
 //Current issues: I can overwrite X and O, current logic doesn't stop it
-//Does not spit out a win thing
+//Does not spit out a win thing X = "&#215;" O = "&#8858;" UPDATE: symbols don't work, text does
 
 
 
