@@ -81,16 +81,16 @@ for (let i = 0; i < cells.length; i++) {
 
 
 //Edit this (Replay)
-// document.getElementById('replay').addEventListener('click', replay);
+document.getElementById('replay').addEventListener('click', replay);
 
-// function replay() {
+function replay() {
 
-//       for (var i = 0; i < boxes.length; i++) {
-//         cells[i].classList.remove("win");
-//         cells[i].innerHTML = "";
-//         turn.innerHTML = "Play";
-//         turn.style.fontSize = "25px";
+      for (var i = 0; i < boxes.length; i++) {
+        cells[i].classList.remove("win");
+        cells[i].innerHTML = "";
+        turn.innerHTML = "Play";
+        turn.style.fontSize = "25px";
 
-//       }
+      }
 
-//     }
+    }

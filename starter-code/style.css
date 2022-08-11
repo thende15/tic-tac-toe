@@ -46,6 +46,18 @@ body {
         align-items: center;
         aspect-ratio: 1;
     }
+    .score {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .box {
+        width: 30vw;
+        height: 20vh;
+    }
+    #p1 {
+        background-color: #F2B137;
+    }
     .hide {
         display: none;
     
