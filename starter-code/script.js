@@ -23,30 +23,6 @@ function setPlayerOne() {
 //     }
 // } 
 /////////////////
-
-
-
-let cells = document.querySelectorAll(".game_space div"), turns = 0;
-for (let i = 0; i < cells.length; i++) {
-    cells[i].onclick = function() {
-        if (this.innerHTML !== "&#215;" && this.innerHTML !== "&#8858;") {
-            if (turns % 2 === 0 && this.innerHTML !== "&#8858;") {
-                this.innerHTML = "&#215;";
-                turn.innerHTML = "&#8858;'s turn";
-                winCon();
-                turns += 1;
-            } else {
-                if (turns % 2 === 1 && this.innerHTML !== "&#215;") {
-                    this.innerHTML = "&#8858;";
-                    turn.innerHTML = "&#215;'s turn";
-                    winCon();
-                    turns += 1;
-            }
-        }
-    }
-}
-}
-
 function winner(c1, c2, c3) {
     c1.classList.add("win");
     c2.classList.add("win");
@@ -72,8 +48,33 @@ function winCon() {
     if(cellSeven === cellFive === cellThree) {winner(cellSeven, cellFive, cellThree)} else
     if(cellOne === cellFour === cellSeven) {winner(cellOne, cellFour, cellSeven)} else
     if(cellTwo === cellFive === cellEight) {winner(cellTwo, cellFive, cellEight)} else
-    if(cellThree === cellSix === cellNine) {winner(cellNine, cellSix, cellThree)} 
+    if(cellThree === cellSix === cellNine) winner(cellNine, cellSix, cellThree) 
 }
+
+
+let cells = document.querySelectorAll(".game_space div"), turns = 0;
+for (let i = 0; i < cells.length; i++) {
+    cells[i].onclick = function() {
+        if (this.innerHTML !== "&#215;" && this.innerHTML !== "&#8858;") {
+            if (turns % 2 === 0 && this.innerHTML !== "&#8858;") {
+                this.innerHTML = "&#215;";
+                turn.innerHTML = "&#8858;'s turn";
+                console.log(winCon());
+                turns += 1;
+            } else {
+                this.innerHTML = "&#8858;";
+                turn.innerHTML = "&#215;'s turn";
+                winCon();
+                turns += 1;
+            
+        }
+    }
+}
+}
+console.log(winCon())
+
+//Current issues: I can overwrite X and O, current logic doesn't stop it
+//Does not spit out a win thing
 
 
 
