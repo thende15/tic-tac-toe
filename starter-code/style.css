@@ -46,13 +46,11 @@ body {
         align-items: center;
         aspect-ratio: 1;
     }
-    .ex {
+    .hide {
         display: none;
     
     }
-    .oh {
-        display: none;
-    }
+    
 }
 
 @media (min-width: 401px) {
@@ -98,12 +96,9 @@ body {
         align-items: center;
         aspect-ratio: 1;
     }
-    .ex {
+    .hide {
         display: none;
     
-    }
-    .oh {
-        display: none;
     }
     
 
