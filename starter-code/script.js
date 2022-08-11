@@ -55,15 +55,7 @@ for (let i = 0; i < cells.length; i++) {
 }
 }
 
-//Winning Combos 
-// 1, 2, 3
-// 4, 5, 6
-// 7, 8, 9
-// 1, 4, 7
-// 2, 5, 8
-// 3, 6, 9
-// 1, 5, 9
-// 7, 5, 3
+
 // function winCon() {
 //     let cellOne = document.getElementById('one')
 //     let cellTwo = document.getElementById('two')
@@ -92,11 +84,11 @@ for (let i = 0; i < cells.length; i++) {
 //Edit this (Replay)
 // document.getElementById('replay').addEventListener('click', replay);
 
-//     function replay() {
+// function replay() {
 
 //       for (var i = 0; i < boxes.length; i++) {
-//         boxes[i].classList.remove("win");
-//         boxes[i].innerHTML = "";
+//         cells[i].classList.remove("win");
+//         cells[i].innerHTML = "";
 //         turn.innerHTML = "Play";
 //         turn.style.fontSize = "25px";
 
