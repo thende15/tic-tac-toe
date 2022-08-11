@@ -76,23 +76,26 @@ for (let i = 0; i < cells.length; i++) {
 //Current issues: I can overwrite X and O, current logic doesn't stop it
 //Does not spit out a win thing X = "&#215;" O = "&#8858;" UPDATE: symbols don't work, text does
 //Need to fix if statements in winCon
-
+//When adding x/o, also add a class, then cursor not allowed
+//When resetting, needs to go back to initial start; set ids to initial state w/ function
 
 
 
 //Edit this (Replay)
-document.getElementById('replay').addEventListener('click', replay);
+// document.getElementById('replay').addEventListener('click', replay);
 
-function replay() {
+// function replay() {
 
-      for (var i = 0; i < boxes.length; i++) {
-        cells[i].classList.remove("win");
-        cells[i].innerHTML = "";
+      // for (var i = 0; i < cells.length; i++) {
+      //   let j = 0
+      //   let boxes = j++
+      //   cells[i].classList.remove("win");
+      //   cells[i].innerHTML = "<span>" boxes "</span>";
         
 
-      }
+//       }
 
-    }
+//     }
 
 // Get the modal
 var modal = document.getElementById("myModal");
