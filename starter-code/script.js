@@ -41,14 +41,46 @@ function winCon() {
     let cellEight = document.getElementById('eight')
     let cellNine = document.getElementById('nine')
 
-    if(cellOne !== '' && cellOne.innerHTML === cellTwo.innerHTML && cellOne.innerHTML === cellThree.innerHTML) {console.log("winner!")} else
-    if(cellFour !== '' && cellFour.innerHTML === cellFive.innerHTML && cellFour.innerHTML === cellSix.innerHTML) {console.log("winner!")} else
-    if(cellSeven !== '' && cellSeven.innerHTML === cellEight.innerHTML && cellSeven.innerHTML === cellNine.innerHTML) {console.log("winner!")} else
-    if(cellOne !== '' && cellOne.innerHTML === cellFive.innerHTML && cellOne.innerHTML === cellNine.innerHTML) {console.log("winner!")} else
-    if(cellSeven !== '' && cellSeven.innerHTML === cellFive.innerHTML && cellSeven.innerHTML === cellThree.innerHTML) {console.log("winner!")} else
-    if(cellOne !== '' && cellOne.innerHTML === cellFour.innerHTML && cellOne.innerHTML === cellSeven.innerHTML) {console.log("winner!")} else
-    if(cellTwo !== '' && cellTwo.innerHTML === cellFive.innerHTML && cellTwo.innerHTML === cellEight.innerHTML) {console.log("winner!")} else
-    if(cellThree !== '' && cellThree.innerHTML === cellSix.innerHTML && cellThree.innerHTML === cellNine.innerHTML)  {console.log("winner!")} 
+    if(cellOne !== '' && cellOne.innerHTML === cellTwo.innerHTML && cellOne.innerHTML === cellThree.innerHTML) 
+    {console.log("winner!")
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }} else
+    if(cellFour !== '' && cellFour.innerHTML === cellFive.innerHTML && cellFour.innerHTML === cellSix.innerHTML) 
+    {console.log("winner!")
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }} else
+    if(cellSeven !== '' && cellSeven.innerHTML === cellEight.innerHTML && cellSeven.innerHTML === cellNine.innerHTML) 
+    {console.log("winner!")
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }} else
+    if(cellOne !== '' && cellOne.innerHTML === cellFive.innerHTML && cellOne.innerHTML === cellNine.innerHTML) 
+    {console.log("winner!")
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }} else
+    if(cellSeven !== '' && cellSeven.innerHTML === cellFive.innerHTML && cellSeven.innerHTML === cellThree.innerHTML) 
+    {console.log("winner!")
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }} else
+    if(cellOne !== '' && cellOne.innerHTML === cellFour.innerHTML && cellOne.innerHTML === cellSeven.innerHTML) 
+    {console.log("winner!")
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }} else
+    if(cellTwo !== '' && cellTwo.innerHTML === cellFive.innerHTML && cellTwo.innerHTML === cellEight.innerHTML) 
+    {console.log("winner!")
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }} else
+    if(cellThree !== '' && cellThree.innerHTML === cellSix.innerHTML && cellThree.innerHTML === cellNine.innerHTML)  
+    {console.log("winner!")
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }} 
 }
 
 
@@ -102,9 +134,6 @@ var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
