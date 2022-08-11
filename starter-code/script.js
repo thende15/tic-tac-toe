@@ -41,7 +41,7 @@ function winCon() {
     let cellEight = document.getElementById('eight')
     let cellNine = document.getElementById('nine')
 
-    if(cellOne !== '' && cellTwo !== '' && cellThree !== '' && cellOne.innerHTML === cellTwo.innerHTML && cellOne.innerHTML === cellThree.innerHTML && cellTwo.innerHTML === cellThree.innerHTML) {console.log("winner!")} else
+    if(cellOne !== '' && cellOne.innerHTML === cellTwo.innerHTML && cellOne.innerHTML === cellThree.innerHTML) {console.log("winner!")} else
     if(cellFour !== '' && cellFour.innerHTML === cellFive.innerHTML && cellFour.innerHTML === cellSix.innerHTML) {console.log("winner!")} else
     if(cellSeven !== '' && cellSeven.innerHTML === cellEight.innerHTML && cellSeven.innerHTML === cellNine.innerHTML) {console.log("winner!")} else
     if(cellOne !== '' && cellOne.innerHTML === cellFive.innerHTML && cellOne.innerHTML === cellNine.innerHTML) {console.log("winner!")} else
