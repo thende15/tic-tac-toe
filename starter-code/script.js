@@ -55,27 +55,32 @@ for (let i = 0; i < cells.length; i++) {
 }
 }
 
+function winner(c1, c2, c3) {
+    c1.classList.add("win");
+    c2.classList.add("win");
+    c3.classList.add("win");
+    //modal call here
+}
+function winCon() {
+    let cellOne = document.getElementById('one') 
+    let cellTwo = document.getElementById('two')
+    let cellThree = document.getElementById('three')
+    let cellFour = document.getElementById('four')
+    let cellFive = document.getElementById('five')
+    let cellSix = document.getElementById('six')
+    let cellSeven = document.getElementById('seven')
+    let cellEight = document.getElementById('eight')
+    let cellNine = document.getElementById('nine')
 
-// function winCon() {
-//     let cellOne = document.getElementById('one')
-//     let cellTwo = document.getElementById('two')
-//     let cellThree = document.getElementById('three')
-//     let cellFour = document.getElementById('four')
-//     let cellFive = document.getElementById('five')
-//     let cellSix = document.getElementById('six')
-//     let cellSeven = document.getElementById('seven')
-//     let cellEight = document.getElementById('eight')
-//     let cellNine = document.getElementById('nine')
-
-//     if(cellOne === cellTwo === cellThree)
-//     if(cellFour === cellFive === cellSix)
-//     if(cellSeven === cellEight === cellNine)
-//     if(cellOne === cellFive === cellNine)
-//     if(cellSeven === cellFive === cellThree)
-//     if(cellOne === cellFour === cellSeven)
-//     if(cellTwo === cellFive === cellEight)
-//     if(cellThree === cellSix === cellNine)
-// }
+    if(cellOne === cellTwo === cellThree) {winner(cellOne, cellTwo, cellThree)}
+    if(cellFour === cellFive === cellSix) {winner(cellFour, cellFive, cellSix)}
+    if(cellSeven === cellEight === cellNine) {winner(cellSeven, cellEight, cellNine)}
+    if(cellOne === cellFive === cellNine) {winner(cellOne, cellFive, cellNine)}
+    if(cellSeven === cellFive === cellThree) {winner(cellSeven, cellFive, cellThree)}
+    if(cellOne === cellFour === cellSeven) {winner(cellOne, cellFour, cellSeven)}
+    if(cellTwo === cellFive === cellEight) {winner(cellTwo, cellFive, cellEight)}
+    if(cellThree === cellSix === cellNine) {winner(cellNine, cellSix, cellThree)}
+}
 
 
 
