@@ -13,6 +13,7 @@ function setPlayerOne() {
         } 
     }
     
+    
 }
 
 // let board = document.querySelector(".game_space");
