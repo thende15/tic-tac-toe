@@ -39,7 +39,7 @@ body {
     .block {
         border-radius: 1rem;
         width: 25vw;
-        
+        font-size: 64px;
         border: 1px, red;
         background-color: whitesmoke;
         justify-content: center;
