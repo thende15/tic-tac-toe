@@ -39,15 +39,15 @@ function setPlayerOne() {
 let cells = document.querySelectorAll(".game_space div"), turns = 0;
 for (let i = 0; i < cells.length; i++) {
     cells[i].onclick = function() {
-        if (this.innerHTML !== "X" && this.innerHTML !== "O") {
+        if (this.innerHTML !== "&#215;" && this.innerHTML !== "&#8858;") {
             if (turns % 2 === 0) {
-                this.innerHTML = "X";
-                turn.innerHTML = "O's turn"
+                this.innerHTML = "&#215;";
+                turn.innerHTML = "&#8858;'s turn"
                 turns += 1;
             } else {
                 if (turns % 2 === 1) {
-                    this.innerHTML = "O";
-                    turn.innerHTML = "X's turn"
+                    this.innerHTML = "&#8858;";
+                    turn.innerHTML = "&#215;'s turn"
                     turns += 1;
             }
         }
