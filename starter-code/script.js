@@ -115,20 +115,20 @@ for (let i = 0; i < cells.length; i++) {
 
 
 //Edit this (Replay)
-// document.getElementById('replay').addEventListener('click', replay);
+document.getElementById('reset').addEventListener('click', replay);
 
-// function replay() {
+function replay() {
 
-      // for (var i = 0; i < cells.length; i++) {
-      //   let j = 0
-      //   let boxes = j++
-      //   cells[i].classList.remove("win");
-      //   cells[i].innerHTML = "<span>" boxes "</span>";
+      for (var i = 0; i < cells.length; i++) {
+        let j = 0
+        let boxes = j++
+        cells[i].classList.remove("win");
+        cells[i].innerHTML = "<span>" + boxes + "</span>";
         
 
-//       }
+      }
 
-//     }
+    }
 
 // Get the modal
 var modal = document.getElementById("myModal");
