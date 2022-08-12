@@ -24,13 +24,7 @@ function setPlayerOne() {
 //     }
 // } 
 /////////////////
-// function winner(c1, c2, c3) {
-//     c1.classList.add("win");
-//     c2.classList.add("win");
-//     c3.classList.add("win");
-//     //modal call here
-//     console.log("winner!")
-// }
+
 function winCon() {
     let cellOne = document.getElementById('one') 
     let cellTwo = document.getElementById('two')
@@ -44,43 +38,32 @@ function winCon() {
 
     if(cellOne.innerHTML !== '' && cellOne.innerHTML === cellTwo.innerHTML && cellOne.innerHTML === cellThree.innerHTML) 
     {console.log("winner!")
-      winModal.style.display = "block";
+      winModal.style.display = "block"; 
+      if (cellOne.innerHTML && cellTwo.innerHTML && cellThree.innerHTML === "<img src='assets/icon-x.svg' class='set'>") {
+        winModal.prependChild("X is the Winner!")  
+      }
     } else
     if(cellFour.innerHTML !== '' && cellFour.innerHTML === cellFive.innerHTML && cellFour.innerHTML === cellSix.innerHTML) 
     {console.log("winner!")
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }} else
+    winModal.style.display = "block";} else
     if(cellSeven.innerHTML !== '' && cellSeven.innerHTML === cellEight.innerHTML && cellSeven.innerHTML === cellNine.innerHTML) 
     {console.log("winner!")
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }} else
+    winModal.style.display = "block";} else
     if(cellOne.innerHTML !== '' && cellOne.innerHTML === cellFive.innerHTML && cellOne.innerHTML === cellNine.innerHTML) 
     {console.log("winner!")
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }} else
+    winModal.style.display = "block";} else
     if(cellSeven.innerHTML !== '' && cellSeven.innerHTML === cellFive.innerHTML && cellSeven.innerHTML === cellThree.innerHTML) 
     {console.log("winner!")
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }} else
+    winModal.style.display = "block";} else
     if(cellOne.innerHTML !== '' && cellOne.innerHTML === cellFour.innerHTML && cellOne.innerHTML === cellSeven.innerHTML) 
     {console.log("winner!")
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }} else
+    winModal.style.display = "block";} else
     if(cellTwo.innerHTML !== '' && cellTwo.innerHTML === cellFive.innerHTML && cellTwo.innerHTML === cellEight.innerHTML) 
     {console.log("winner!")
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }} else
+    winModal.style.display = "block";} else
     if(cellThree.innerHTML !== '' && cellThree.innerHTML === cellSix.innerHTML && cellThree.innerHTML === cellNine.innerHTML)  
     {console.log("winner!")
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }} 
+    winModal.style.display = "block";} 
 }
 
 
@@ -89,12 +72,12 @@ for (let i = 0; i < cells.length; i++) {
     cells[i].onclick = function() {
         if (this.innerHTML !== "<img src='assets/icon-x.svg' >" && this.innerHTML !== "<img src='assets/icon-o.svg' >") {
             if (turns % 2 === 0 && this.innerHTML !== "<img src='assets/icon-o.svg' >") {
-                this.innerHTML = "<img src='assets/icon-x.svg' >";
+                this.innerHTML = "<img src='assets/icon-x.svg' class='set'>";
                 turn.innerHTML = "<img src='assets/icon-o.svg' >'s turn";
                 winCon();
                 turns += 1;
             } else {
-                this.innerHTML = "<img src='assets/icon-o.svg' >";
+                this.innerHTML = "<img src='assets/icon-o.svg' class='set'>";
                 turn.innerHTML = "<img src='assets/icon-x.svg' >'s turn";
                 winCon();
                 turns += 1;
