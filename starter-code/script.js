@@ -10,10 +10,14 @@ function setPlayerOne() {
             
             // document.getElementById("result").innerHTML
             //    = "Player One is: " + playerOne[i].value
-        } 
+            document.getElementById("page_one").style.display = "none";
+            document.getElementById("page_two").style.display = "block";
+        } else {
+          document.getElementById("required").style.display
+            = "block";
+        }
     }
-    document.getElementById("page_one").style.display = "none";
-    document.getElementById("page_two").style.display = "block";
+    
     
     
 }
@@ -28,8 +32,9 @@ function setPlayerOne() {
 /////////////////
 function winner(c1, c2, c3) {
   winModal.style.display = "block";
-  winModal.prependParent() = c1.innerHTML + " wins!";
-  
+  //winModal.prependParent() = c1.innerHTML + " wins!";
+  winModal.getElementsByClassName('modal-content').prependParent(c1.innerHTML + " wins!")
+  //$('.modal-content').prepend(postBox)
 }
 
 function winCon() {
