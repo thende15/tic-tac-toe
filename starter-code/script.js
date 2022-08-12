@@ -42,42 +42,42 @@ function winCon() {
     let cellEight = document.getElementById('eight')
     let cellNine = document.getElementById('nine')
 
-    if(cellOne !== '' && cellOne.innerHTML === cellTwo.innerHTML && cellOne.innerHTML === cellThree.innerHTML) 
+    if(cellOne.innerHTML !== '' && cellOne.innerHTML === cellTwo.innerHTML && cellOne.innerHTML === cellThree.innerHTML) 
     {console.log("winner!")
     btn.onclick = function() {
       modal.style.display = "block";
     }} else
-    if(cellFour !== '' && cellFour.innerHTML === cellFive.innerHTML && cellFour.innerHTML === cellSix.innerHTML) 
+    if(cellFour.innerHTML !== '' && cellFour.innerHTML === cellFive.innerHTML && cellFour.innerHTML === cellSix.innerHTML) 
     {console.log("winner!")
     btn.onclick = function() {
       modal.style.display = "block";
     }} else
-    if(cellSeven !== '' && cellSeven.innerHTML === cellEight.innerHTML && cellSeven.innerHTML === cellNine.innerHTML) 
+    if(cellSeven.innerHTML !== '' && cellSeven.innerHTML === cellEight.innerHTML && cellSeven.innerHTML === cellNine.innerHTML) 
     {console.log("winner!")
     btn.onclick = function() {
       modal.style.display = "block";
     }} else
-    if(cellOne !== '' && cellOne.innerHTML === cellFive.innerHTML && cellOne.innerHTML === cellNine.innerHTML) 
+    if(cellOne.innerHTML !== '' && cellOne.innerHTML === cellFive.innerHTML && cellOne.innerHTML === cellNine.innerHTML) 
     {console.log("winner!")
     btn.onclick = function() {
       modal.style.display = "block";
     }} else
-    if(cellSeven !== '' && cellSeven.innerHTML === cellFive.innerHTML && cellSeven.innerHTML === cellThree.innerHTML) 
+    if(cellSeven.innerHTML !== '' && cellSeven.innerHTML === cellFive.innerHTML && cellSeven.innerHTML === cellThree.innerHTML) 
     {console.log("winner!")
     btn.onclick = function() {
       modal.style.display = "block";
     }} else
-    if(cellOne !== '' && cellOne.innerHTML === cellFour.innerHTML && cellOne.innerHTML === cellSeven.innerHTML) 
+    if(cellOne.innerHTML !== '' && cellOne.innerHTML === cellFour.innerHTML && cellOne.innerHTML === cellSeven.innerHTML) 
     {console.log("winner!")
     btn.onclick = function() {
       modal.style.display = "block";
     }} else
-    if(cellTwo !== '' && cellTwo.innerHTML === cellFive.innerHTML && cellTwo.innerHTML === cellEight.innerHTML) 
+    if(cellTwo.innerHTML !== '' && cellTwo.innerHTML === cellFive.innerHTML && cellTwo.innerHTML === cellEight.innerHTML) 
     {console.log("winner!")
     btn.onclick = function() {
       modal.style.display = "block";
     }} else
-    if(cellThree !== '' && cellThree.innerHTML === cellSix.innerHTML && cellThree.innerHTML === cellNine.innerHTML)  
+    if(cellThree.innerHTML !== '' && cellThree.innerHTML === cellSix.innerHTML && cellThree.innerHTML === cellNine.innerHTML)  
     {console.log("winner!")
     btn.onclick = function() {
       modal.style.display = "block";
@@ -108,10 +108,10 @@ for (let i = 0; i < cells.length; i++) {
 
 //Current issues: I can overwrite X and O, current logic doesn't stop it
 //Does not spit out a win thing X = "&#215;" O = "&#8858;" UPDATE: symbols don't work, text does
-//Need to fix if statements in winCon
 //When adding x/o, also add a class, then cursor not allowed
 //When resetting, needs to go back to initial start; set ids to initial state w/ function
-
+//Reset half works; not looping, therefore not adding individual values
+//When reset, needs to reset to X. In Replay. Then add counters to winner modals (save to local)
 
 
 //Edit this (Replay)
@@ -122,8 +122,9 @@ function replay() {
       for (var i = 0; i < cells.length; i++) {
         let j = 0
         let boxes = j++
-        cells[i].classList.remove("win");
-        cells[i].innerHTML = "<span>" + boxes + "</span>";
+        cells[i].innerHTML = "";
+        turn.innerHTML = "X's turn";
+        turns = 0
         
 
       }
