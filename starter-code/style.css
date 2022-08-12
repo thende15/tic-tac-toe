@@ -53,7 +53,7 @@ body {
     }
     .game_space {
         border: 2px, black;
-        width: 1000vw;
+        width: 100vw;
         height: 60vh;
         display: grid;
         grid-template-rows: 33% 33% 33%; 
@@ -171,6 +171,8 @@ body {
         display: flex;
         justify-content: center;
         align-content: center;
+        width: 50vw;
+        height: 30vh;
         
     }
     #begin {
@@ -182,11 +184,11 @@ body {
     }
     .game_space {
         border: 2px, black;
-        width: 1000vw;
-        height: 60vh;
+        
         display: grid;
-        grid-template-rows: 33% 33% 33%; 
-        grid-template-columns: 33% 33% 33%;
+        gap: 15rem;
+        grid-template-rows: 15% 15% 15%; 
+        grid-template-columns: 15% 15% 15%;
         justify-content: center;
         
         
@@ -196,7 +198,7 @@ body {
     }
     .block {
         border-radius: 1rem;
-        width: 25vw;
+        width: 15vw;
         font-size: 64px;
         background-color: #1f3641;
         justify-content: center;
