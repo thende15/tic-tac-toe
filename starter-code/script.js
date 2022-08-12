@@ -28,7 +28,7 @@ function setPlayerOne() {
 /////////////////
 function winner(c1, c2, c3) {
   winModal.style.display = "block";
-  winModal.innerHTML = c1.innerHTML + " wins!";
+  winModal.prependParent() = c1.innerHTML + " wins!";
   
 }
 
