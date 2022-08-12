@@ -114,7 +114,7 @@ for (let i = 0; i < cells.length; i++) {
 //Then add counters to winner modals (save to local)
 
 
-//Edit this (Replay)
+//Replay
 document.getElementById('confirm').addEventListener('click', replay);
 
 function replay() {
@@ -131,19 +131,19 @@ function replay() {
 
     }
 
-// Get the modal
+
+//Reset Modal functions
 let modal = document.getElementById("resModal");
 let btnRes = document.getElementById("reset");
-
-// When the user clicks on the button, open the modal
+let btnCan = document.getElementById("no")
 btnRes.onclick = function() {
   modal.style.display = "block";
 }
-
-
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+btnCan.onclick = function() {
+  modal.style.display = "none";
 }
