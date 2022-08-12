@@ -8,10 +8,13 @@ function setPlayerOne() {
         if(playerOne[i].checked) {
             console.log(playerOne)
             localStorage.setItem('Player One', playerOne[i].value);
+            
             // document.getElementById("result").innerHTML
             //    = "Player One is: " + playerOne[i].value
         } 
     }
+    document.getElementById("page_one").style.display = "none";
+    document.getElementById("page_two").style.display = "block";
     
     
 }
@@ -139,4 +142,6 @@ btnCan.onclick = function() {
 }
 btnQt.onclick = function() {
   winModal.style.display = "none";
+  document.getElementById("page_one").style.display = "block";
+  document.getElementById("page_two").style.display = "none";
 }
