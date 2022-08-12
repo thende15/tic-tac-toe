@@ -88,15 +88,15 @@ function winCon() {
 let cells = document.querySelectorAll(".game_space div"), turns = 0;
 for (let i = 0; i < cells.length; i++) {
     cells[i].onclick = function() {
-        if (this.innerHTML !== "X" && this.innerHTML !== "O") {
-            if (turns % 2 === 0 && this.innerHTML !== "O") {
-                this.innerHTML = "X";
-                turn.innerHTML = "O's turn";
+        if (this.innerHTML !== "<img src='assets/icon-x.svg' >" && this.innerHTML !== "<img src='assets/icon-o.svg' >") {
+            if (turns % 2 === 0 && this.innerHTML !== "<img src='assets/icon-o.svg' >") {
+                this.innerHTML = "<img src='assets/icon-x.svg' >";
+                turn.innerHTML = "<img src='assets/icon-o.svg' >'s turn";
                 winCon();
                 turns += 1;
             } else {
-                this.innerHTML = "O";
-                turn.innerHTML = "X's turn";
+                this.innerHTML = "<img src='assets/icon-o.svg' >";
+                turn.innerHTML = "<img src='assets/icon-x.svg' >'s turn";
                 winCon();
                 turns += 1;
             
