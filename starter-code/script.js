@@ -42,7 +42,7 @@ function winner(c1, c2, c3) {
   //newWinner.innerHTML = c1 + " wins!"
   //winModal.prependParent() = c1.innerHTML + " wins!";
   //modalContent.appendChild(newWinner)
-  //$('.modal-content').prepend(postBox)
+  
 }
 
 function winCon() {
