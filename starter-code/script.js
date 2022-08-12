@@ -33,13 +33,11 @@ function setPlayerOne() {
 function winner(c1, c2, c3) {
   winModal.style.display = "block";
   let modalContent = document.querySelector('.modal-content')
-  if (c1.innerHTML = "<img src='assets/icon-x.svg' class='set'>") {
+  if (c1.innerHTML === "<img src='assets/icon-x.svg' class='set'>") {
     modalContent.querySelector('#x_win').style.display = 'block';
-  } else if (c1.innerHTML = "<img src='assets/icon-o.svg' class='set'>") {
+  } else  {
     modalContent.querySelector('#o_win').style.display = 'block';
-  } else {
-    modalContent.querySelector('#tie').style.display = 'block';
-  }
+  } 
   //let newWinner = document.createElement('div')
   //newWinner.innerHTML = c1 + " wins!"
   //winModal.prependParent() = c1.innerHTML + " wins!";
