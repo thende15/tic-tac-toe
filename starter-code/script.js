@@ -115,7 +115,7 @@ for (let i = 0; i < cells.length; i++) {
 
 
 //Edit this (Replay)
-document.getElementById('reset').addEventListener('click', replay);
+document.getElementById('confirm').addEventListener('click', replay);
 
 function replay() {
 
@@ -125,7 +125,7 @@ function replay() {
         cells[i].innerHTML = "";
         turn.innerHTML = "X's turn";
         turns = 0
-        
+        modal.style.display = "none";
 
       }
 
