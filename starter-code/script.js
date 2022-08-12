@@ -26,6 +26,11 @@ function setPlayerOne() {
 //     }
 // } 
 /////////////////
+function winner(c1, c2, c3) {
+  winModal.style.display = "block";
+  winModal.innerHTML = c1.innerHTML + " wins!";
+  
+}
 
 function winCon() {
     let cellOne = document.getElementById('one') 
@@ -39,33 +44,30 @@ function winCon() {
     let cellNine = document.getElementById('nine')
 
     if(cellOne.innerHTML !== '' && cellOne.innerHTML === cellTwo.innerHTML && cellOne.innerHTML === cellThree.innerHTML) 
-    {console.log("winner!")
-      winModal.style.display = "block"; 
-      if (cellOne.innerHTML === "<img src='assets/icon-x.svg' class='set'>" && cellTwo.innerHTML === "<img src='assets/icon-x.svg' class='set'>" && cellThree.innerHTML === "<img src='assets/icon-x.svg' class='set'>") {
-        winModal.prependChild("X is the Winner!")  
-      }
+    {console.log("winner!") 
+      winner(cellOne, cellTwo, cellThree)
     } else
     if(cellFour.innerHTML !== '' && cellFour.innerHTML === cellFive.innerHTML && cellFour.innerHTML === cellSix.innerHTML) 
     {console.log("winner!")
-    winModal.style.display = "block";} else
+    winner(cellFour, cellFive, cellSix);} else
     if(cellSeven.innerHTML !== '' && cellSeven.innerHTML === cellEight.innerHTML && cellSeven.innerHTML === cellNine.innerHTML) 
     {console.log("winner!")
-    winModal.style.display = "block";} else
+    winner(cellSeven, cellEight, cellNine);} else
     if(cellOne.innerHTML !== '' && cellOne.innerHTML === cellFive.innerHTML && cellOne.innerHTML === cellNine.innerHTML) 
     {console.log("winner!")
-    winModal.style.display = "block";} else
+    winner(cellOne, cellFive, cellNine);} else
     if(cellSeven.innerHTML !== '' && cellSeven.innerHTML === cellFive.innerHTML && cellSeven.innerHTML === cellThree.innerHTML) 
     {console.log("winner!")
-    winModal.style.display = "block";} else
+    winner(cellSeven, cellFive, cellThree);} else
     if(cellOne.innerHTML !== '' && cellOne.innerHTML === cellFour.innerHTML && cellOne.innerHTML === cellSeven.innerHTML) 
     {console.log("winner!")
-    winModal.style.display = "block";} else
+    winner(cellOne, cellFour, cellSeven);} else
     if(cellTwo.innerHTML !== '' && cellTwo.innerHTML === cellFive.innerHTML && cellTwo.innerHTML === cellEight.innerHTML) 
     {console.log("winner!")
-    winModal.style.display = "block";} else
+    winner(cellTwo, cellFive, cellEight);} else
     if(cellThree.innerHTML !== '' && cellThree.innerHTML === cellSix.innerHTML && cellThree.innerHTML === cellNine.innerHTML)  
     {console.log("winner!")
-    winModal.style.display = "block";} 
+    winner(cellThree, cellSix, cellNine);} 
 }
 
 
