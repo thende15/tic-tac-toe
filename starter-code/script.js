@@ -44,9 +44,8 @@ function winCon() {
 
     if(cellOne.innerHTML !== '' && cellOne.innerHTML === cellTwo.innerHTML && cellOne.innerHTML === cellThree.innerHTML) 
     {console.log("winner!")
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }} else
+      winModal.style.display = "block";
+    } else
     if(cellFour.innerHTML !== '' && cellFour.innerHTML === cellFive.innerHTML && cellFour.innerHTML === cellSix.innerHTML) 
     {console.log("winner!")
     btn.onclick = function() {
@@ -134,8 +133,11 @@ function replay() {
 
 //Reset Modal functions
 let modal = document.getElementById("resModal");
+let winModal = document.getElementById("winModal");
 let btnRes = document.getElementById("reset");
-let btnCan = document.getElementById("no")
+let btnCan = document.getElementById("no");
+let btnNxt = document.getElementById("nxtRoun");
+let btnQt = document.getElementById("quit");
 btnRes.onclick = function() {
   modal.style.display = "block";
 }
@@ -144,6 +146,14 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+window.onclick = function(event) {
+  if (event.target == modal) {
+    winModal.style.display = "none";
+  }
+}
 btnCan.onclick = function() {
   modal.style.display = "none";
+}
+btnQt.onclick = function() {
+  winModal.style.display = "none";
 }
