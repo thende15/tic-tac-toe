@@ -32,8 +32,18 @@ function setPlayerOne() {
 /////////////////
 function winner(c1, c2, c3) {
   winModal.style.display = "block";
+  let modalContent = document.querySelector('.modal-content')
+  if (c1 = "<img src='assets/icon-x.svg'></img>") {
+    modalContent.querySelector('#x_win').style.display = 'block';
+  } else if (c1 = "<img src='assets/icon-o.svg'></img>") {
+    modalContent.querySelector('#o_win').style.display = 'block';
+  } else {
+    modalContent.querySelector('#tie').style.display = 'block';
+  }
+  //let newWinner = document.createElement('div')
+  //newWinner.innerHTML = c1 + " wins!"
   //winModal.prependParent() = c1.innerHTML + " wins!";
-  winModal.getElementsByClassName('modal-content').prependParent(c1.innerHTML + " wins!")
+  //modalContent.appendChild(newWinner)
   //$('.modal-content').prepend(postBox)
 }
 
@@ -98,29 +108,26 @@ for (let i = 0; i < cells.length; i++) {
 
 
 //Current issues: I can overwrite X and O, current logic doesn't stop it
-//Does not spit out a win thing X = "&#215;" O = "&#8858;" UPDATE: symbols don't work, text does
 //When adding x/o, also add a class, then cursor not allowed
-//When resetting, needs to go back to initial start; set ids to initial state w/ function
-//Reset half works; not looping, therefore not adding individual values
 //Then add counters to winner modals (save to local)
 
 
 //Replay
 document.getElementById('confirm').addEventListener('click', replay);
-
+let btnNxt = document.getElementById("nxtRoun").addEventListener('click', replay);
 function replay() {
+for (let i = 0; i < cells.length; i++) {
+  let j = 0
+  let boxes = j++
+  cells[i].innerHTML = "";
+  turn.innerHTML = "<img src='assets/icon-x.svg'>'s turn";
+  turns = 0
+  modal.style.display = "none";
+  winModal.style.display = "none";
+  }
 
-      for (let i = 0; i < cells.length; i++) {
-        let j = 0
-        let boxes = j++
-        cells[i].innerHTML = "";
-        turn.innerHTML = "<img src='assets/icon-x.svg'>'s turn";
-        turns = 0
-        modal.style.display = "none";
+}
 
-      }
-
-    }
 
 
 //Reset Modal functions
@@ -128,7 +135,7 @@ let modal = document.getElementById("resModal");
 let winModal = document.getElementById("winModal");
 let btnRes = document.getElementById("reset");
 let btnCan = document.getElementById("no");
-let btnNxt = document.getElementById("nxtRoun");
+
 let btnQt = document.getElementById("quit");
 btnRes.onclick = function() {
   modal.style.display = "block";
