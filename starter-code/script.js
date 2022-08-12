@@ -6,7 +6,6 @@ function setPlayerOne() {
     let playerOne = document.getElementsByName("player_select");
     for (i = 0; i < playerOne.length; i++) {
         if(playerOne[i].checked) {
-            console.log(playerOne)
             localStorage.setItem('Player One', playerOne[i].value);
             
             // document.getElementById("result").innerHTML
@@ -144,4 +143,13 @@ btnQt.onclick = function() {
   winModal.style.display = "none";
   document.getElementById("page_one").style.display = "block";
   document.getElementById("page_two").style.display = "none";
+  for (let i = 0; i < cells.length; i++) {
+    let j = 0
+    let boxes = j++
+    cells[i].innerHTML = "";
+    turn.innerHTML = "<img src='assets/icon-x.svg'>'s turn";
+    turns = 0
+    modal.style.display = "none";
+
+  }
 }
