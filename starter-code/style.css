@@ -79,11 +79,24 @@ body {
         justify-content: space-between;
     }
     .box {
-        width: 30vw;
-        height: 20vh;
+        width: 28vw;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 1rem;
     }
     #p1 {
         background-color: #F2B137;
+        border-radius: 1rem;
+    }
+    #draw {
+        background-color: #A8BFC9;
+        border-radius: 1rem;
+    }
+    #p2 {
+        background-color: #31C3BD;
+        border-radius: 1rem;
     }
     .hide {
         display: none;
