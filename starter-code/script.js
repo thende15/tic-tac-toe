@@ -42,7 +42,7 @@ function winCon() {
     if(cellOne.innerHTML !== '' && cellOne.innerHTML === cellTwo.innerHTML && cellOne.innerHTML === cellThree.innerHTML) 
     {console.log("winner!")
       winModal.style.display = "block"; 
-      if (cellOne.innerHTML && cellTwo.innerHTML && cellThree.innerHTML === "<img src='assets/icon-x.svg' class='set'>") {
+      if (cellOne.innerHTML === "<img src='assets/icon-x.svg' class='set'>" && cellTwo.innerHTML === "<img src='assets/icon-x.svg' class='set'>" && cellThree.innerHTML === "<img src='assets/icon-x.svg' class='set'>") {
         winModal.prependChild("X is the Winner!")  
       }
     } else
@@ -73,7 +73,7 @@ function winCon() {
 let cells = document.querySelectorAll(".game_space div"), turns = 0;
 for (let i = 0; i < cells.length; i++) {
     cells[i].onclick = function() {
-        if (this.innerHTML !== "<img src='assets/icon-x.svg' >" && this.innerHTML !== "<img src='assets/icon-o.svg' >") {
+        if (this.innerHTML !== "<img src='assets/icon-x.svg'>" && this.innerHTML !== "<img src='assets/icon-o.svg' >") {
             if (turns % 2 === 0 && this.innerHTML !== "<img src='assets/icon-o.svg' >") {
                 this.innerHTML = "<img src='assets/icon-x.svg' class='set'>";
                 turn.innerHTML = "<img src='assets/icon-o.svg' >'s turn";
@@ -81,7 +81,7 @@ for (let i = 0; i < cells.length; i++) {
                 turns += 1;
             } else {
                 this.innerHTML = "<img src='assets/icon-o.svg' class='set'>";
-                turn.innerHTML = "<img src='assets/icon-x.svg' >'s turn";
+                turn.innerHTML = "<img src='assets/icon-x.svg'>'s turn";
                 winCon();
                 turns += 1;
             
@@ -108,7 +108,7 @@ function replay() {
         let j = 0
         let boxes = j++
         cells[i].innerHTML = "";
-        turn.innerHTML = "X's turn";
+        turn.innerHTML = "<img src='assets/icon-x.svg'>'s turn";
         turns = 0
         modal.style.display = "none";
 
