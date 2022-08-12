@@ -135,10 +135,10 @@ function replay() {
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btnRes = document.getElementById("reset");
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
+btnRes.onclick = function() {
   modal.style.display = "block";
 }
 
