@@ -132,7 +132,7 @@ function replay() {
     }
 
 // Get the modal
-var modal = document.getElementById("myModal");
+var modal = document.getElementById("resModal");
 
 // Get the button that opens the modal
 var btnRes = document.getElementById("reset");
