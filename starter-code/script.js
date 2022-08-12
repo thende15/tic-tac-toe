@@ -111,7 +111,7 @@ for (let i = 0; i < cells.length; i++) {
 //When adding x/o, also add a class, then cursor not allowed
 //When resetting, needs to go back to initial start; set ids to initial state w/ function
 //Reset half works; not looping, therefore not adding individual values
-//When reset, needs to reset to X. In Replay. Then add counters to winner modals (save to local)
+//Then add counters to winner modals (save to local)
 
 
 //Edit this (Replay)
@@ -119,7 +119,7 @@ document.getElementById('confirm').addEventListener('click', replay);
 
 function replay() {
 
-      for (var i = 0; i < cells.length; i++) {
+      for (let i = 0; i < cells.length; i++) {
         let j = 0
         let boxes = j++
         cells[i].innerHTML = "";
@@ -132,10 +132,8 @@ function replay() {
     }
 
 // Get the modal
-var modal = document.getElementById("resModal");
-
-// Get the button that opens the modal
-var btnRes = document.getElementById("reset");
+let modal = document.getElementById("resModal");
+let btnRes = document.getElementById("reset");
 
 // When the user clicks on the button, open the modal
 btnRes.onclick = function() {
